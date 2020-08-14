@@ -108,8 +108,8 @@ defaultColors = \case
   ST.Var                 -> Nothing
   ST.Reference _         -> Nothing
   ST.Referent _          -> Nothing
-  ST.HashQualified _     -> Nothing
   ST.Op _                -> Nothing
+  ST.Unit                -> Nothing
   ST.Constructor         -> Nothing
   ST.Request             -> Nothing
   ST.AbilityBraces       -> Just HiBlack
@@ -119,13 +119,12 @@ defaultColors = \case
   ST.BindingEquals       -> Nothing
   ST.TypeAscriptionColon -> Just Blue
   ST.DataTypeKeyword     -> Nothing
-  ST.DataType            -> Nothing
   ST.DataTypeParams      -> Nothing
   ST.DataTypeModifier    -> Nothing
   ST.UseKeyword          -> Just HiBlack
   ST.UsePrefix           -> Just HiBlack
   ST.UseSuffix           -> Just HiBlack
-  ST.HashQualifier       -> Just HiBlack
+  ST.HashQualifier _     -> Just HiBlack
   ST.DelayForceChar      -> Just Yellow
   ST.DelimiterChar       -> Nothing
   ST.Parenthesis         -> Nothing
