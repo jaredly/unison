@@ -83,4 +83,5 @@ termName ppe r = P.syntaxToColor $
 typeName :: PPE.PrettyPrintEnv -> Reference -> Pretty
 typeName ppe r = P.syntaxToColor $ 
   NP.styleHashQualified'' (NP.fmt $ S.Reference r) name
+  where name = PPE.typeName ppe r
 
