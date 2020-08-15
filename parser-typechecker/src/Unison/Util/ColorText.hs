@@ -108,7 +108,7 @@ defaultColors = \case
   ST.Var                 -> Nothing
   ST.Reference _         -> Nothing
   ST.Referent _          -> Nothing
-  ST.Op _                -> Nothing
+  ST.Op                  -> Nothing
   ST.Unit                -> Nothing
   ST.Constructor         -> Nothing
   ST.Request             -> Nothing

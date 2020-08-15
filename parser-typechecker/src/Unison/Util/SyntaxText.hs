@@ -4,7 +4,6 @@ import Unison.Prelude
 import Unison.Reference (Reference)
 import Unison.Referent (Referent)
 import Unison.HashQualified (HashQualified)
-import Unison.Pattern (SeqOp)
 
 import Unison.Util.AnnotatedText      ( AnnotatedText(..), annotate )
 
@@ -19,7 +18,7 @@ data Element = NumericLiteral
              | Var
              | Reference Reference
              | Referent Referent
-             | Op SeqOp
+             | Op
              | Constructor
              | Request
              | AbilityBraces

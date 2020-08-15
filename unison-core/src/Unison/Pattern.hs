@@ -53,7 +53,7 @@ data PatternP loc
 data SeqOp = Cons
            | Snoc
            | Concat
-           deriving (Eq, Show, Ord)
+           deriving (Eq, Show)
 
 instance H.Hashable SeqOp where
   tokens Cons = [H.Tag 0]
